@@ -1,0 +1,142 @@
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: #100;
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-title {
+            color: blue;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .gradient-heading {
+            background: linear-gradient(to right, rgb(63, 203, 96), rgb(32, 114, 208), rgb(7, 20, 206), rgb(144, 7, 236));
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, violet, indigo);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .gradient-button {
+            background: linear-gradient(to right, violet, indigo);
+            -webkit-background-clip: text;
+            color: transparent;
+            border: 1px solid violet;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .gradient-button:hover {
+            background: linear-gradient(to right, violet, indigo);
+            color: white;
+        }
+        .gradient-input {
+            color: violet;
+            border: 1px solid violet;
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            color: blue;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group .hint {
+            color: red;
+            font-size: 12px;
+        }
+        .form-actions {
+            text-align: center;
+        }
+        .form-actions input {
+            padding: 10px 20px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-title gradient-heading">Registration Form</div>
+        <form action="rsubmitted.html">
+            <div class="form-group">
+                <label for="firstname" class="gradient-text">First Name (Minimum 6 characters)</label>
+                <input type="text" id="firstname" name="firstname" class="gradient-input" required minlength="6">
+            </div>
+            <div class="form-group">
+                <label for="lastname" class="gradient-text">Last Name</label>
+                <input type="text" id="lastname" name="lastname" class="gradient-input" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="gradient-text">Email Address</label>
+                <input type="email" id="email" name="email" class="gradient-input" required>
+                <div class="hint">e.g. csaiml1wd2024@gmail.com</div>
+            </div>
+            <div class="form-group">
+                <label for="pass" class="gradient-text">Password (Minimum 6 characters)</label>
+                <input type="password" id="pass" name="pass" class="gradient-input" required minlength="6">
+            </div>
+            <div class="form-group">
+                <label for="address" class="gradient-text">Address</label>
+                <textarea rows="4" cols="25" id="address" name="address" class="gradient-input" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="mobileno" class="gradient-text">Mobile No.</label>
+                <input type="tel" id="mobileno" name="mobileno" class="gradient-input" required>
+            </div>
+            <div class="form-group">
+                <label for="dob" class="gradient-text">Date of Birth</label>
+                <select id="dob-day" name="dob-day" class="gradient-input" required>
+                    <option value="">Day</option>
+                    <!-- Add options for days 1-31 -->
+                </select>
+                <select id="dob-month" name="dob-month" class="gradient-input" required>
+                    <option value="">Month</option>
+                    <!-- Add options for months 1-12 -->
+                </select>
+                <select id="dob-year" name="dob-year" class="gradient-input" required>
+                    <option value="">Year</option>
+                    <!-- Add options for years -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="gradient-text">Languages Known:</label>
+                <input type="checkbox" name="languages" value="english"> English
+                <input type="checkbox" name="languages" value="telugu"> Telugu
+                <input type="checkbox" name="languages" value="hindi"> Hindi
+                <input type="checkbox" name="languages" value="tamil"> Tamil
+            </div>
+            <div class="form-group">
+                <label class="gradient-text">Gender:</label>
+                <input type="radio" name="gender" value="male" required> Male
+                <input type="radio" name="gender" value="female" required> Female
+            </div>
+            <div class="form-actions">
+                <input type="submit" value="Submit" class="gradient-button">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
