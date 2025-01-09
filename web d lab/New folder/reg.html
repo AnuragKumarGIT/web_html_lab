@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Registration Form</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+background-color: #D7E5F0;
+}
+.header {
+text-align: center;
+color: blue;
+font-size: 36px;
+font-family: Arial, sans-serif;
+margin-bottom: 20px;
+}
+.required {
+color: red;
+}
+.example {
+color: red;
+font-style: italic;
+}
+label {
+display: block;
+margin-bottom: 10px;
+}
+input[type="text"],
+input[type="password"],
+input[type="datetime-local"] {
+width: 50%;
+height: 30px;
+margin-bottom: 20px;
+padding: 10px;
+box-sizing: border-box;
+}
+input[type="radio"] {
+margin-right: 10px;
+}
+.button-container {
+text-align: center;
+margin-top: 20px;
+}
+.button-container input[type="submit"],
+.button-container input[type="reset"] {
+width: 100px;
+height: 30px;
+marginbackground-color: #4CAF50;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+.button-container input[type="submit"]:hover,
+.button-container input[type="reset"]:hover {
+background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+<div class="header">
+Registration Form
+</div>
+<form action="home3.html">
+<label>
+First Name (Minimum 6 characters)<span class="required">*</span>
+<input type="text" id="firstname" required minlength="6">
+</label>
+<label>
+Last Name
+<input type="text" id="lastname">
+</label>
+<label>
+Email Address<span class="required">*</span>
+<input type="email" id="email" required>
+<span class="example">(one email id only): e.g.
+smith@hotmail.com</span>
+</label>
+<label>
+Password (minimum 6 characters)<span class="required">*</span>
+<input type="password" id="password" required minlength="6">
+</label>
+<label>
+Mobile No<span class="required">*</span>
+<input type="tel" id="mobileno" required>
+</label>
+<label>
+Gender:
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+</label>
+<label>
+Date of Birth:
+<input type="date" id="dob">
+</label>
+<label>
+Language<span class="required">*</span>
+<input type="text" id="lang" required>
+</label>
+<div class="button-container">
+<input type="submit" name="b1" value="Submit">
+<input type="reset" name="b2" value="Reset">
+</div>
+</form>
+</body>
+</html

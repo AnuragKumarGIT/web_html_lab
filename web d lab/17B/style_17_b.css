@@ -1,0 +1,91 @@
+body {
+    background-image: url("https://i.pinimg.com/originals/ec/0b/b5/ec0bb5458c27f22fe0057fa026a0843d.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    text-align: center;
+    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 20px;
+    animation: slideIn 1.5s ease-out;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+section p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #4CAF50, #008CBA);
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:link,
+.button:visited {
+    background: linear-gradient(45deg, #4CAF50, #008CBA);
+    color: white;
+}
+
+.button:visited {
+    background: linear-gradient(#00ffff);
+    color: rgb(26, 24, 24);
+}
+
+.button:active {
+    background: linear-gradient(45deg, #ff22c4, #911ca3);
+    transform: scale(0.95);
+    color: #e21616;
+}
+
+.button:hover {
+    background: linear-gradient(45deg, #FFC107, #FFEB3B);
+    color: #07c3f2;
+    color: #07c3f2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
