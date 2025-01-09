@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Two Frames Example</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+        }
+        .frame-container {
+            display: flex;
+            flex: 1;
+        }
+        iframe {
+            flex: 1;
+            border: none;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: linear-gradient(90deg, #ff00ff, #00ffff);
+            color: white;
+        }
+        footer a {
+            color: #ff00ff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #00ffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="frame-container">
+        <iframe src="D:\coding\college\2nd yr\web d lab\07_web.html" name="frame1"></iframe>
+        <iframe src="D:\coding\events\divv saxena 17 sep\mob_dep.html" name="frame2"></iframe>
+    </div>
+    <footer>
+        <p>&copy; 2024 AK_WEB-D. Connect with me on <a href="https://twitter.com" target="_blank">Twitter</a> or <a href="https://linkedin.com" target="_blank">LinkedIn</a></p>
+    </footer>
+</body>
+</html>
